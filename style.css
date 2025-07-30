@@ -1,0 +1,61 @@
+ 
+           body{
+             background-color: rgba(0, 255, 51, 0.3); 
+             } 
+             button{
+                margin: 2px;
+             }
+          
+             #fs{
+                 border-radius:25px ; 
+             }
+            #input{ 
+                background-color: rgb(255, 255, 255,0.2);
+                border-radius: 10px; 
+                margin: 1px;
+            }
+            #submitter{
+                height: 150px;
+                position:fixed;
+                display: flex;
+                flex-direction: column;
+                align-items:center;
+                justify-content:center;
+                bottom: 0;
+                left:43%;
+                backdrop-filter: blur(1px);
+                background-color: rgba(255, 255, 255,0.4);
+                border-style: double;
+                border-radius:25px;
+                z-index:1;
+            }
+            #todo{
+                animation-name: td;
+                animation-timing-function: ease;
+                animation-duration: 5s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+                padding:10px ;
+                margin: 20px;
+            }
+            @keyframes td {
+                0%{
+                   transform:scale(1);
+                  background-color: rgba(51, 255, 0, 0.2);
+                   width: fit-content;
+                   border-radius: 100%;
+                }
+                50%{
+                  transform: scale(2);
+                  border-radius: 100%;
+                   background-color: rgba(51, 255, 0, 0.5);
+                   width: fit-content;
+                }
+                100%{
+                  transform: scale(1);
+                   background-color: rgb(51, 255, 0);
+                   width: fit-content;
+                   border-radius: 0%;
+                }
+                
+            }
